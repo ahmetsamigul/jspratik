@@ -1,8 +1,11 @@
-const todoList = document.querySelector(".list-group");
-const todos = document.querySelectorAll(".list-group-item");
+const cardBody = document.querySelectorAll(".card-body")[1];
+
+const newTitle = document.createElement("h2");
+newTitle.className = "card-title";
+newTitle.innerHTML = "Todo Listesi - Yeni Başlık"
 
 
-// todos[todos.length-1].remove();
+cardBody.replaceChild(newTitle, cardBody.childNodes[1]);
 
 console.log(todos);
 
